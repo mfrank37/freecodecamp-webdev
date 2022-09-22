@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  font-family:  sans-serif;
+  font-size: 15px;
+  line-height: 120%;
+  color: hsl(0, 0%, 20%);
+}
+
+
+header {
+  color: black;
+  font-size: 24px;
+  margin: 5px 0 5px 0;
+  padding: 15px 0 15px 0;
+}
+
+#navbar {
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  border-right: 2px solid black;
+}
+
+#navbar header {
+  padding: 15px 30px 15px 30px;
+}
+
+.nav-link {
+  position: relative;
+  margin-bottom: -1px;
+  padding: 15px 30px 15px 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
+}
+
+#main-doc {
+  padding: 30px;
+  overflow: auto;
+}
+
+code {
+  display: block;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px;
+  margin: 5px;
+  white-space: preline;
+  font-family: Consolas, monospace;
+  font-size: 100%;
+}
+
+ul li {
+  margin: 10px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  #main-doc {
+    min-width: 500px;
+  }
+  #navbar {
+    min-width: fit-content;
+  }
+}
