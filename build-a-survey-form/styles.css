@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: hsl(0, 0%, 90%);
+  font-family: Poppins, Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+heading, main {
+  max-width: 600px;
+  margin: auto;
+}
+
+body, fieldset, form {
+  display: flex;
+  flex-flow: column;
+}
+
+heading {
+  text-align: center;
+}
+
+#title {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+#description {
+  margin-top: 0px;
+  font-style: italic;
+}
+
+form {
+  padding: 30px;
+  background-color: hsl(240, 50%, 20%, 0.7);
+  border-radius: 10px;
+}
+
+input, button, select, textarea {
+  height: 40px;
+  border-radius: 5px;
+  outline: unset;
+  border: 0px;
+  padding-left: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-width: 300px;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  height: 100px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+fieldset label {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+[type=radio] ,[type=checkbox] {
+  width: 20px;
+  margin: 0px;
+}
+
+select, button, [type=radio] ,[type=checkbox] {
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  background-color: hsl(140, 60%, 50%);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins, Roboto, 'Helvetica Neue', sans-serif;
+}
+
+fieldset {
+  border: unset;
+  margin-top: 20px;
+  padding: 0;
+}
+
+input::placeholder, select, textarea::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins, Roboto, 'Helvetica Neue', sans-serif;
+}
+
+select {
+  color: hsl(0, 0%, 20%);
+}
