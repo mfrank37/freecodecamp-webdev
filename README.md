@@ -6,7 +6,7 @@ freeCodeCamp is a very good website to help learn Web Design and other tech skil
 **Disclaimer:**
 This repo is for showcasing my work. Other coders should not use this code to pass freeCodeCamp challenges. They'd rather make their attempts and post any difficulties they face, to the freeCodeCamp community.
 
-You can check the [Live site URL](https://github.io/mfrank37/freecodecamp-webdev)
+You can check the [Live site URL](https://mfrank37.github.io/freecodecamp-webdev/)
 
 ## The challenges
 
