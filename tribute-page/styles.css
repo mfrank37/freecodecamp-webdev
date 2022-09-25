@@ -51,3 +51,8 @@ h2 {
 a {
   color: teal;
 }
+
+li h3, li p {
+  display: inline;
+  font-size: inherit;
+}
