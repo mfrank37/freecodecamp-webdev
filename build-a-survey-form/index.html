@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="freeCodeCamp Survey Form. Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks">
+  <title>Survey Form</title>
+<link rel="stylesheet" href="./styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <heading>
@@ -27,7 +32,7 @@
       </select>
         <fieldset id="recommend">
           <legend>Would you recommend freeCodeCamp to a friend?</legend>
-          <label><input type="radio" name="recommend" value="definitely"> Definitely</label>
+          <label><input type="radio" name="recommend" value="definitely" checked> Definitely</label>
           <label><input type="radio" name="recommend" value="maybe">Maybe</label>
           <label><input type="radio" name="recommend" value="not-sure">Not sure</label>
         </fieldset>
