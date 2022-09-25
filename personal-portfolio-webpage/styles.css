@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,400;0,700;1,100;1,200&display=swap');
 
 :root {
-  --dark-gray:  hsl(0, 0%, 25%);
+  --dark-gray:  hsl(220, 15%, 20%);
   --dark-grayish-blue: hsl(240, 20%, 40%);
   --redish: hsl(350, 80%, 40%);
   background-color: var(--dark-gray);
@@ -30,7 +30,13 @@ section {
 #welcome-section {
   display: initial;
 }
-
+#welcome-section header {
+  background: linear-gradient(
+    45deg,
+    hsl(220, 15%, 50%),
+    hsl(220, 15%, 5%)
+  );
+}
 #welcome-section header, #contact {
   min-height: calc(100vh - 60px);
   display: flex;
@@ -58,20 +64,26 @@ header h1 {
   background-color: var(--redish);
   position: sticky;
   top: 0px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 30px;
   padding-right: 20px;
   height: 60px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #navbar a {
+  height: 100%;
+  float: right;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  padding: 0 10px;
 }
-
+#navbar a:hover {
+  background-color: var(--dark-grayish-blue);
+}
 #projects {
   background-color: var(--dark-grayish-blue);
+  padding-bottom: 50px;
 }
 
 #contact {
@@ -135,6 +147,49 @@ header h1 {
   transition: all 0.5s cubic-bezier(0, 0.5, 0.8, 1.5);
 }
 
+.project-tile figcaption::before, .project-tile figcaption::after {
+  color: orange;
+  opacity: 0;
+  transition: 0.5s linear;
+  font-size: 80%;
+}
+
+.project-tile figcaption::before {
+  content: "< ";
+}
+
+.project-tile figcaption::after {
+  content: " />";
+}
+
+.project-tile:hover figcaption::before,
+.project-tile:hover figcaption::after {
+  opacity: 1;
+}
+
+#projects button {
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 20px;
+  color: white;
+  background-color: var(--dark-gray);
+  display: block;
+  margin: auto;
+}
+
+#projects button, #projects button i {
+  transition: 0.3s linear;
+}
+
+#projects button:hover {
+  background-color: var(--redish);
+}
+
+#projects button:hover i{
+  margin-left: 5px;
+}
+
 footer {
   border-top: 3px solid var(--redish);
   width: 100%;
@@ -144,7 +199,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  font-size: 18px;
+  font-size: 15px;
   padding: 15px;
 }
 
@@ -156,6 +211,10 @@ footer {
   padding: 10px;
   height: fit-content;
   transition: padding-top 150ms linear;
+}
+
+#contact .links a i {
+  margin-right: 10px;
 }
 
 #contact .links a:hover {
