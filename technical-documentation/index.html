@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JS Documentation. Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks">
+  <title>JS Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <nav id="navbar">
@@ -24,21 +28,23 @@
   <a class="nav-link" href="#Reference">Reference</a>
 </nav>
 <main id="main-doc">
-  <section class="main-section" id="Introduction">
-    <header>
+  <section class="main-section" id="Introduction" role="region" aria-labelledby="header-Introduction">
+    <header id="header-Introduction">
       Introduction
     </header>
     <article>
     <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
     <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+    <p>
     <ul>
       <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
       <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
     </ul>
+    </p>
     </article>
   </section>
-  <section class="main-section" id="What_you_should_already_know">
-    <header>
+  <section class="main-section" id="What_you_should_already_know" role="region" aria-labelledby="header-What_you_should_already_know">
+    <header id="header-What_you_should_already_know">
       What you should already know
     </header>
     <article>
@@ -50,8 +56,8 @@
     </ul>
     </article>
   </section>
-  <section class="main-section" id="JavaScript_and_Java">
-    <header>
+  <section class="main-section" id="JavaScript_and_Java" role="region" aria-labelledby="header-JavaScript_and_Java">
+    <header id="header-JavaScript_and_Java">
       JavaScript and Java
     </header>
     <article>
@@ -60,8 +66,8 @@
     <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
   </article>
   </section>
-  <section class="main-section" id="Hello_world">
-    <header>
+  <section class="main-section" id="Hello_world" role="region" arialabelledby="header-Hello_world">
+    <header id="header-Hello_world">
       Hello world
     </header>
     <article>
@@ -75,8 +81,8 @@
     </p>
     </article>
   </section>
-  <section class="main-section" id="Variables">
-    <header>
+  <section class="main-section" id="Variables" role="region" aria-labelledby="header-Variables">
+    <header id="header-Variables">
       Variables
     </header>
     <article>
@@ -85,8 +91,8 @@
     <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
   </article>
   </section>
-  <section class="main-section" id="Declaring_variables">
-    <header>
+  <section class="main-section" id="Declaring_variables" role="region" aria-labelledby="header-Declaring_variables">
+    <header id="header-Declaring_variables">
       Declaring variables
     </header>
     <article>
@@ -104,8 +110,8 @@
     </p>
     </article>
   </section>
-  <section class="main-section" id="Variable_scope">
-    <header>
+  <section class="main-section" id="Variable_scope" role="region" aria-labelledby="header-Variable_scope">
+    <header id="header-Variable_scope">
       Variable scope
     </header>
     <article>
@@ -126,8 +132,8 @@
     </p>
     </article>
   </section>
-  <section class="main-section" id="Global_variables">
-    <header>
+  <section class="main-section" id="Global_variables" role="region" aria-labelledby="header-Global_variables">
+    <header id="header-Global_variables">
       Global variables
     </header>
     <article>
@@ -135,8 +141,8 @@
     <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
     </article>
   </section>
-  <section class="main-section" id="Constants">
-    <header>
+  <section class="main-section" id="Constants" role="region" aria-labelledby="header-Constants">
+    <header id="header-Constants">
       Constants
     </header>
     <article>
@@ -164,8 +170,8 @@
     </p>
     </article>
   </section>
-  <section class="main-section" id="Data_types">
-    <header>
+  <section class="main-section" id="Data_types" role="region" aria-labelledby="header-Data_types">
+    <header id="header-Data_types">
       Data types
     </header>
     <article>
@@ -189,8 +195,8 @@
       </p>
     </article>
   </section>
-  <section class="main-section" id="if...else_statement">
-    <header>
+  <section class="main-section" id="if...else_statement" role="region" aria-labelledby="header-if...else_statement">
+    <header id="header-if...else_statement">
       if...else statement
     </header>
     <article>
@@ -230,8 +236,8 @@
     </p>
     </article>
   </section>
-  <section class="main-section" id="while_statement">
-    <header>
+  <section class="main-section" id="while_statement" role="region" aria-labelledby="header-while_statement">
+    <header id="header-while_statement">
       while statement
     </header>
     <article>
@@ -264,8 +270,8 @@
     </p>
     </article>
   </section>
-  <section class="main-section" id="Function_declarations">
-    <header>
+  <section class="main-section" id="Function_declarations" role="region" aria-labelledby="header-Function_declarations">
+    <header id="header-Function_declarations">
       Function declarations
     </header>
     <article>
@@ -288,8 +294,8 @@
       </p>
     </article>
   </section>
-  <section class="main-section" id="Reference">
-    <header>
+  <section class="main-section" id="Reference" role="region" aria-labelledby="header-Reference">
+    <header id="header-Reference">
       Reference
     </header>
     <article>
