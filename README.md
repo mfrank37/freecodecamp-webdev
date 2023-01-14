@@ -1,6 +1,6 @@
 # freeCodeCamp - Responsive Web Design challenges
 
-This repo includes challenge solutions related to Responsive Web Design by freeCodeCamp.org
+This repo includes challenge solutions related to **Responsive Web Design** by freeCodeCamp.org
 freeCodeCamp is a very good website to help learn Web Design and other tech skills most useful for the world.
 
 **Disclaimer:**
